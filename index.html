@@ -668,22 +668,22 @@ var QUESTIONS=[
    hint:'이지석과 오석진은 서로 붙어 있다.'},
 
   {tag:'MISSION 11',
-   title:'영화 포스터의 의미는?',
-   guide:'💡 영화 속 연도에 태어난 직원은?',
+   title:'영화 속 연도에 태어난 직원은 누구일까?',
+   guide:'💡 영화 속 연도에 태어난 직원의 인사카드 번호를 찾아보세요.',
    type:'poster', q:'',
    ans:['5942'],
    hint:'윤소희는 가장 왼쪽(1번 자리)이다.'},
 
   {tag:'MISSION 12',
-   title:'이 사진의 의미는?',
-   guide:'💡 사진 속 별자리를 가진 직원은?',
+   title:'각 별자리를 가진 직원은 누구일까?',
+   guide:'💡 사진 속 기호와 같은 별자리를 가진 직원을 찾아보세요.',
    type:'starmap', q:'',
    ans:['4213'],
    hint:'김태양은 가장 오른쪽(10번 자리)에 있다.'},
 
   {tag:'MISSION 13',
-   title:'이 사진의 의미는?',
-   guide:'💡 각 색깔이 의미하는 혈액형, 그 혈액형의 직원은 몇명일까?',
+   title:'해당 혈액형을 가진 직원은 몇명일까?',
+   guide:'💡 각 색깔이 의미하는 혈액형을 찾아보세요.',
    type:'bloodmap', q:'',
    ans:['3313'],
    hint:'이하연과 강태희는 서로 붙어 있다.'}
@@ -1010,7 +1010,7 @@ function renderQ(idx){
     ansH='<div class="pg">';
     for(var pi=0;pi<4;pi++){
       ansH+='<div class="pi"><img src="'+POSTERS[POSTER_LIST[pi].key]+'" class="poster-img" alt="포스터" onclick="openLightbox(this.src)">'+
-        '<input class="poster-inp" id="poster-inp-'+pi+'" type="text" maxlength="2" placeholder="명" oninput="posterChange('+pi+')"></div>';
+        '<input class="poster-inp" id="poster-inp-'+pi+'" type="text" maxlength="2" placeholder="번호" oninput="posterChange('+pi+')"></div>';
     }
     ansH+='</div><button class="btn btn-acc" onclick="checkPoster('+idx+')" style="margin-top:4px">확인</button>'+
       '<div class="fb" id="fb"></div>'+xhH;
