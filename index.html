@@ -677,7 +677,7 @@ var QUESTIONS=[
    hint:'이지석과 오석진은 서로 붙어 있다.'},
 
   {tag:'MISSION 11',
-   title:'영화 포스터의 의미는?',
+   title:'영화 포스터 속 연도와 직원의 생년월일의 관계는?',
    desc:'4장의 포스터를 보고 연결고리를 찾아보세요.',
    guide:'💡 포스터 속 연도와 직원의 생년월일, 어떤 관계일까?',
    ri:{leader:'',A:'',B:''},
@@ -687,7 +687,7 @@ var QUESTIONS=[
    showHR:true},
 
   {tag:'MISSION 12',
-   title:'이 사진의 의미는?',
+   title:'이 사진과 직원들의 별자리의 관계는?',
    desc:'아래 사진을 보고 기호의 의미를 찾아보세요.',
    guide:'💡 각 기호가 가리키는 별자리를 가진 직원은 누구일까?',
    ri:{leader:'',A:'',B:''},
@@ -697,7 +697,7 @@ var QUESTIONS=[
    showHR:true},
 
   {tag:'MISSION 13',
-   title:'이 사진의 의미는?',
+   title:'이 사진과 직원들의 혈액형과의 관계는?',
    desc:'화면 속 관계도를 보고 4가지 색깔이 각각 무엇을 의미하는지 추론하세요.',
    guide:'💡 각 색깔이 의미하는 혈액형, 그 혈액형의 직원은 몇 명일까?',
    ri:{leader:'',A:'',B:''},
@@ -843,7 +843,7 @@ function makeHRFull(c,highlight){
 window.addEventListener('load',function(){
   // 뷰어 모드: CSS(html.v)가 이미 처리, JS 가드는 2차 방어
   var g=el('tbg');
-  for(var i=1;i<=9;i++){(function(n){
+  for(var i=1;i<=11;i++){(function(n){
     var b=document.createElement('button');b.className='tb';
     b.textContent=n+'조';
     b.addEventListener('click',function(){
